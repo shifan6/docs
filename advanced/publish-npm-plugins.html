@@ -1,0 +1,1050 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>如何构建插件 · 文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="shifan">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="write-unit-test.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    开发规范
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../specification/file.html">
+            
+                <a href="../specification/file.html">
+            
+                    
+                    文件目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../specification/html-add-css.html">
+            
+                <a href="../specification/html-add-css.html">
+            
+                    
+                    HTML & CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../specification/javascript.html">
+            
+                <a href="../specification/javascript.html">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../specification/vue.html">
+            
+                <a href="../specification/vue.html">
+            
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../specification/compatibility.html">
+            
+                <a href="../specification/compatibility.html">
+            
+                    
+                    页面兼容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../specification/tool.html">
+            
+                <a href="../specification/tool.html">
+            
+                    
+                    工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../git/">
+            
+                <a href="../git/">
+            
+                    
+                    Git 规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    通用组件/代码
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../common/previewImg.html">
+            
+                <a href="../common/previewImg.html">
+            
+                    
+                    查看大图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../common/textEllipsis.html">
+            
+                <a href="../common/textEllipsis.html">
+            
+                    
+                    文本省略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../common/dateTimeRangePicker.html">
+            
+                <a href="../common/dateTimeRangePicker.html">
+            
+                    
+                    时间选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../common/lazyLoadSelect.html">
+            
+                <a href="../common/lazyLoadSelect.html">
+            
+                    
+                    懒加载选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../common/animate.html">
+            
+                <a href="../common/animate.html">
+            
+                    
+                    缓动动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../common/file.html">
+            
+                <a href="../common/file.html">
+            
+                    
+                    文件处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../common/filters.html">
+            
+                <a href="../common/filters.html">
+            
+                    
+                    全局过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../common/performance.html">
+            
+                <a href="../common/performance.html">
+            
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../common/check.html">
+            
+                <a href="../common/check.html">
+            
+                    
+                    数据检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" >
+            
+                <span>
+            
+                    
+                    持续完善中...
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    进阶
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="use-chrome-performance.html">
+            
+                <a href="use-chrome-performance.html">
+            
+                    
+                    如何分析页面性能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="write-unit-test.html">
+            
+                <a href="write-unit-test.html">
+            
+                    
+                    如何编写单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.3" data-path="publish-npm-plugins.html">
+            
+                <a href="publish-npm-plugins.html">
+            
+                    
+                    如何构建插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >如何构建插件</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="vuejs---&#x6784;&#x5EFA;&#x63D2;&#x4EF6;&#x5E76;&#x5728;npm&#x4E0A;&#x53D1;&#x5E03;">Vue.js - &#x6784;&#x5EFA;&#x63D2;&#x4EF6;&#x5E76;&#x5728;NPM&#x4E0A;&#x53D1;&#x5E03;</h1>
+<h3 id="&#x5F15;&#x8A00;">&#x5F15;&#x8A00;</h3>
+<p>&#x63D2;&#x4EF6;&#x5728;&#x6211;&#x4EEC;&#x65E5;&#x5E38;&#x5F00;&#x53D1;&#x4E2D;&#x5FC5;&#x4E0D;&#x53EF;&#x5C11;&#xFF0C;&#x90A3;&#x4E48;&#x5982;&#x4F55;&#x6784;&#x5EFA;&#x81EA;&#x5DF1;&#x7684;&#x63D2;&#x4EF6;&#x5462;&#xFF1F;&#x8FD9;&#x7BC7;&#x6587;&#x6863;&#x4EE5; <a href="https://www.npmjs.com/package/v-preview-img/v/1.0.12" target="_blank">v-preview-img</a> &#x63D2;&#x4EF6;&#x4E3A;&#x4F8B;&#xFF0C;&#x4F9D;&#x6B21;&#x4ECB;&#x7ECD;&#x6784;&#x5EFA;&#x3001;&#x6253;&#x5305;&#x3001;&#x53D1;&#x5E03;&#x548C;&#x4F7F;&#x7528;&#x56DB;&#x4E2A;&#x73AF;&#x8282;&#x3002;</p>
+<h3 id="&#x6784;&#x5EFA;&#x63D2;&#x4EF6;">&#x6784;&#x5EFA;&#x63D2;&#x4EF6;</h3>
+<h4 id="&#x6B65;&#x9AA4;-1&#xFF1A;&#x5B89;&#x88C5;&#x4F9D;&#x8D56;">&#x6B65;&#x9AA4; 1&#xFF1A;&#x5B89;&#x88C5;&#x4F9D;&#x8D56;</h4>
+<p><a href="https://www.npmjs.com/package/v-preview-img" target="_blank">v-preview-img</a> &#x63D2;&#x4EF6;&#x662F;&#x57FA;&#x4E8E; Vue CLI &#x5F00;&#x53D1;&#x548C;&#x6253;&#x5305;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5148;&#x8981;&#x5B89;&#x88C5;&#x5168;&#x5C40;&#x4F9D;&#x8D56;&#xFF1A;</p>
+<pre><code>$ npm install -g @vue/cli
+$ npm install -g @vue/cli-service-global
+</code></pre><blockquote>
+<p>&#x5982;&#x679C;&#x5DF2;&#x7ECF;&#x5168;&#x5C40;&#x5B89;&#x88C5;&#x4E86;&#x65E7;&#x7248;&#x672C;&#x7684; vue-cli (1.x&#x6216;2.x)&#xFF0C;&#x9700;&#x8981;&#x5148;&#x5378;&#x8F7D;&#x518D;&#x5B89;&#x88C5;&#x65B0;&#x7248;&#x672C;&#x3002;</p>
+</blockquote>
+<h4 id="&#x6B65;&#x9AA4;-2&#xFF1A;&#x521D;&#x59CB;&#x5316;&#x63D2;&#x4EF6;&#x76EE;&#x5F55;">&#x6B65;&#x9AA4; 2&#xFF1A;&#x521D;&#x59CB;&#x5316;&#x63D2;&#x4EF6;&#x76EE;&#x5F55;</h4>
+<p>&#x9996;&#x5148;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7A7A;&#x9879;&#x76EE;&#xFF1A;</p>
+<pre><code>$ vue create project-name
+</code></pre><p>&#x6267;&#x884C;&#x5B8C;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x540E;&#x4F1A;&#x6709;&#x4E00;&#x4E9B;&#x63D0;&#x793A;&#xFF0C;&#x4E00;&#x76F4;&#x56DE;&#x8F66;&#x5C31;&#x53EF;&#x4EE5;&#x5566;&#xFF0C;&#x9879;&#x76EE;&#x751F;&#x6210;&#x540E;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="https://cdn.17kjs.com/public_server_file_/75ByKy1629442578020" alt="image"></p>
+<p>&#x5728;&#x6B64;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x6211;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x9700;&#x8981;&#x5220;&#x6389;&#x4E0D;&#x8981;&#x7684;&#xFF0C;&#x65B0;&#x5EFA;&#x4E86; PreviewImg.vue &#xFF0C;&#x6B64;&#x65F6;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="https://cdn.17kjs.com/public_server_file_/mnNScD1629442808482" alt="image"></p>
+<p>&#x597D;&#x4E86;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#xFF0C;&#x5C31;&#x80FD;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x8BBF;&#x95EE;&#x4E86;&#xFF1A;</p>
+<pre><code>$ vue serve src/PreviewImg.vue
+</code></pre><blockquote>
+<p> &#x66F4;&#x591A;&#x5173;&#x4E8E;vue&#x5FEB;&#x901F;&#x539F;&#x578B;&#x5F00;&#x53D1;&#x7684;&#x77E5;&#x8BC6;&#xFF0C;&#x53EF;&#x4EE5;&#x67E5;&#x770B;<a href="https://cli.vuejs.org/zh/guide/prototyping.html" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a> </p>
+</blockquote>
+<h4 id="&#x6B65;&#x9AA4;-3&#xFF1A;&#x5B8C;&#x5584;&#x63D2;&#x4EF6;&#x4EE3;&#x7801;">&#x6B65;&#x9AA4; 3&#xFF1A;&#x5B8C;&#x5584;&#x63D2;&#x4EF6;&#x4EE3;&#x7801;</h4>
+<p><strong>&#x6A21;&#x7248; Template</strong></p>
+<pre><code>&lt;template&gt;
+  &lt;div class=&quot;preview-wrapper&quot; v-if=&quot;currentImageUrl&quot;&gt;
+    &lt;div class=&apos;tip&apos; v-show=&apos;currentTip&apos;&gt;{{ currentTip }}&lt;/div&gt;
+    &lt;div class=&quot;preview-img&quot;&gt;
+      &lt;div class=&quot;fl side-click&quot; v-if=&quot;currentImageIndex &gt; 0&quot;&gt;
+        &lt;div @click=&quot;prevImg&quot;&gt;
+          &lt;img src=&quot;./images/preview-arrow.png&quot; class=&quot;clickArrow&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;image-wrapper fl&quot;&gt;
+        &lt;img :src=&quot;currentImageUrl&quot; class=&apos;mainImg&apos; :width=&quot;size.width&quot;
+             :class=&quot;&apos;rotate&apos; + 90*rotate&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;fr side-click&quot; v-if=&quot;currentImageIndex &lt; data.length - 1&quot;&gt;
+        &lt;div @click=&quot;nextImg&quot;&gt;
+          &lt;img src=&quot;./images/preview-arrow2.png&quot; class=&quot;clickArrow&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&apos;bottom&apos;&gt;
+      &lt;img src=&quot;./images/preview-enlarge.png&quot; class=&apos;rotate&apos; @click=&quot;largeImg&quot;&gt;
+      &lt;img src=&quot;./images/preview-narrow.png&quot; class=&apos;rotate&apos; @click=&quot;narrowImg&quot;&gt;
+      &lt;img src=&quot;./images/preview-circle.png&quot; class=&apos;rotate&apos; @click=&quot;rotateImg&quot;&gt;
+      &lt;img src=&quot;./images/preview-circle2.png&quot; class=&apos;rotate&apos; @click=&quot;rotateImgBack&quot;&gt;
+      &lt;span class=&quot;button&quot; @click=&quot;exit&quot;&gt;&#x9000;&#x51FA;&#x9884;&#x89C8;&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+</code></pre><p><strong>JavaScript</strong></p>
+<pre><code>&lt;script&gt;
+  export default {
+    name: &quot;preview-img&quot;,
+    props: {
+      data: {
+        type: Array,
+        default() {
+          return [
+            &apos;http://git.tsingzone.com/uploads/user/avatar/49/22771955.jpeg&apos;
+          ]
+        },
+        validator(data) {
+          return data.length &gt; 0
+        }
+      },
+      options: {
+        type: Object,
+        default() {
+          return {}
+        }
+      },
+      exit: {
+        type: Function,
+        default() {
+          console.log(&apos;&#x9000;&#x51FA;&#x9884;&#x89C8;&apos;)
+        }
+      }
+    },
+    data() {
+      return {
+        defaultOptions: {
+          initImageIndex: 0,
+        },
+        currentImageUrl: &apos;&apos;,
+        currentImageIndex: &apos;&apos;,
+        rotate: 0,
+        tipList: [
+          &apos;&#x4E0D;&#x80FD;&#x518D;&#x653E;&#x5927;&#x4E86;&#x54E6;&apos;,
+          &apos;&#x4E0D;&#x80FD;&#x518D;&#x7F29;&#x5C0F;&#x4E86;&#x54E6;&apos;,
+          &apos;&#x524D;&#x9762;&#x5DF2;&#x7ECF;&#x6CA1;&#x6709;&#x4E86;&apos;,
+          &apos;&#x5DF2;&#x7ECF;&#x662F;&#x6700;&#x540E;&#x4E00;&#x5F20;&#x4E86;&#x54E6;&apos;
+        ],
+        currentTip: &apos;&apos;,
+        size: {
+          actualWidth: 0,
+          width: &apos;auto&apos;,
+          zoom: 1
+        }
+      }
+    },
+    methods: {
+      // &#x65CB;&#x8F6C;
+      rotateImg() {
+        this.rotate = (this.rotate + 1) % 4
+      },
+
+      // &#x9006;&#x5411;&#x65CB;&#x8F6C;
+      rotateImgBack() {
+        this.rotate = (this.rotate + 3) % 4
+      },
+
+      // &#x653E;&#x5927;
+      largeImg() {
+        if (this.size.zoom &gt;= 1.5) {
+          this.showTip(0)
+        } else {
+          this.size.zoom = parseFloat(this.size.zoom) + 0.1
+          this.size.width = this.size.zoom * this.size.actualWidth
+        }
+      },
+
+      // &#x7F29;&#x5C0F;
+      narrowImg() {
+        if (this.size.zoom &lt;= 0.1) {
+          this.showTip(1)
+        } else {
+          this.size.zoom = parseFloat(this.size.zoom) - 0.1
+          this.size.width = this.size.zoom * this.size.actualWidth
+        }
+      },
+
+      // &#x4E0A;&#x4E00;&#x5F20;
+      prevImg() {
+        if (this.currentImageIndex == 0) {
+          this.showTip(2)
+        } else {
+          this.showImage(this.currentImageIndex - 1)
+        }
+      },
+
+      // &#x4E0B;&#x4E00;&#x5F20;
+      nextImg() {
+        if (this.currentImageIndex == this.data.length - 1) {
+          this.showTip(3)
+        } else {
+          this.showImage(this.currentImageIndex + 1)
+        }
+      },
+
+      // &#x663E;&#x793A;&#x63D0;&#x793A;
+      showTip(index) {
+        this.currentTip = this.tipList[index]
+        setTimeout(() =&gt; {
+          this.currentTip = &apos;&apos;
+      }, 1500)
+      },
+
+      // &#x663E;&#x793A;&#x56FE;&#x7247;
+      showImage(index) {
+        this.currentImageIndex = index
+        this.currentImageUrl = this.data[index]
+
+        // &#x83B7;&#x53D6;&#x56FE;&#x7247;&#x5B9E;&#x9645;&#x5C3A;&#x5BF8;
+        this.getImageSize(this.currentImageUrl, this.calcShowSize)
+      },
+
+      // &#x8BA1;&#x7B97;&#x6700;&#x4F73;&#x7684;&#x663E;&#x793A;&#x6BD4;&#x4F8B;
+      calcShowSize({ width, height }) {
+        const windowWidth = window.innerWidth
+        const windowHeight = window.innerHeight
+        let zoom = 1
+        if(width &gt; windowWidth || height &gt; windowHeight){
+          zoom = Math.min(windowWidth/width, windowHeight/height).toFixed(1)
+          zoom = Math.max(zoom, 0.1)
+        }
+        this.size = {
+          actualWidth: width,
+          width: width*zoom,
+          zoom: zoom
+        }
+      },
+
+      // &#x83B7;&#x53D6;&#x56FE;&#x7247;&#x5C3A;&#x5BF8;
+      getImageSize(url, callback) {
+        const img = new Image()
+        img.src = url
+
+        // &#x5224;&#x65AD;&#x662F;&#x5426;&#x6709;&#x7F13;&#x5B58;
+        if(img.complete){
+          callback({
+            width: img.width,
+            height: img.height
+          })
+        }else{
+          img.onload = function(){
+            callback({
+              width: img.width,
+              height: img.height
+            })
+          }
+        }
+      },
+    },
+    mounted() {
+      const options = Object.assign(this.defaultOptions, this.options)
+      this.showImage(options.initImageIndex)
+    }
+  }
+&lt;/script&gt;
+</code></pre><p><strong>&#x6837;&#x5F0F; Style</strong></p>
+<pre><code>&lt;style&gt;
+  .preview-wrapper {
+    margin-top: 30px;
+  }
+
+  .preview-img {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 22;
+    overflow: auto;
+    box-sizing: border-box;
+  }
+
+  .preview-img .image-wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 33;
+    text-align: center;
+    overflow-y: auto;
+    display: flex;
+    padding-bottom: 60px;
+  }
+
+  .preview-img .image-wrapper .mainImg {
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .preview-img .side-click {
+    height: 100%;
+    width: 6%;
+    cursor: pointer;
+  }
+
+  .preview-img .side-click div {
+    position: fixed;
+    z-index: 44;
+    background-color: rgba(40, 40, 40, 0.8);
+    height: 80px;
+    width: 60px;
+    top: 50%;
+    margin-top: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .preview-img .side-click .clickArrow {
+    width: 50%;
+  }
+
+  .preview-img .side-click.fl div{
+    left: 20px;
+  }
+
+  .preview-img .side-click.fr div{
+    right: 20px;
+  }
+
+  .rotate0 {
+    transform: rotate(0deg);
+  }
+
+  .rotate90 {
+    transform: rotate(90deg);
+  }
+
+  .rotate180 {
+    transform: rotate(180deg);
+  }
+
+  .rotate270 {
+    transform: rotate(270deg);
+  }
+
+  .fr {
+    float: right;
+  }
+
+  .fl {
+    float: left;
+  }
+
+  .bottom {
+    position: fixed;
+    width: 100%;
+    z-index: 55;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, .4);
+  }
+
+  .bottom .rotate {
+    height: 30px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+
+  .bottom .button {
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    color: #d3d5dc;
+    font-size: 14px;
+    border: 1px solid #d3d5dc;
+    border-radius: 4px;
+  }
+
+  .bottom .button:hover {
+    color: #333;
+    background: #d3d5dc;
+  }
+
+  .tip {
+    position: fixed;
+    top: 100px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background-color: #888;
+    color: #fff;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    width: 150px;
+    text-align: center;
+    padding: 0 5px;
+    border-radius: 6px;
+    z-index: 100;
+  }
+&lt;/style&gt;
+</code></pre><p>&#x5230;&#x8FD9;&#x91CC;&#xFF0C;&#x63D2;&#x4EF6;&#x5C31;&#x6784;&#x5EFA;&#x7684;&#x5DEE;&#x4E0D;&#x591A;&#x5566;&#xFF0C;&#x540E;&#x7EED;&#x53EF;&#x4EE5;&#x50CF;&#x8FD9;&#x6837;&#x4F7F;&#x7528;&#xFF1A;</p>
+<pre><code>&lt;preview-img
+  :options=&quot;previewOptions&quot;
+  :exit=&quot;exitPreview&quot;
+  :data=&quot;previewImages&quot;
+&gt;&lt;/preview-img&gt;
+</code></pre><h3 id="&#x6253;&#x5305;&#x63D2;&#x4EF6;">&#x6253;&#x5305;&#x63D2;&#x4EF6;</h3>
+<h4 id="&#x6B65;&#x9AA4;-1&#xFF1A;-&#x5B8C;&#x5584;-packagejson-&#x6587;&#x4EF6;">&#x6B65;&#x9AA4; 1&#xFF1A; &#x5B8C;&#x5584; package.json &#x6587;&#x4EF6;</h4>
+<pre><code>{
+  &quot;private&quot;: false,
+  &quot;name&quot;: &quot;v-preview-img&quot;,
+  &quot;version&quot;: &quot;1.0.9&quot;,
+  &quot;description&quot;: &quot;&#x56FE;&#x7247;&#x9884;&#x89C8;&#x63D2;&#x4EF6;&quot;,
+  &quot;main&quot;: &quot;./dist/index.umd.js&quot;,
+  &quot;files&quot;: [
+    &quot;dist&quot;
+  ],
+  &quot;author&quot;: &quot;Shi Fan&quot;,
+  &quot;license&quot;: &quot;MIT&quot;,
+  &quot;scripts&quot;: {
+    &quot;dev&quot;: &quot;vue serve src/PreviewImg.vue&quot;,
+    &quot;lib&quot;: &quot;vue-cli-service build --target lib --name index --dest dist src/PreviewImg.vue&quot;
+  },
+  &quot;dependencies&quot;: {
+    &quot;core-js&quot;: &quot;^3.6.5&quot;,
+    &quot;vue&quot;: &quot;^2.6.11&quot;
+  },
+  &quot;devDependencies&quot;: {
+    &quot;@vue/cli-plugin-babel&quot;: &quot;~4.5.0&quot;,
+    &quot;@vue/cli-plugin-eslint&quot;: &quot;~4.5.0&quot;,
+    &quot;@vue/cli-service&quot;: &quot;~4.5.0&quot;,
+    &quot;babel-eslint&quot;: &quot;^10.1.0&quot;,
+    &quot;eslint&quot;: &quot;^6.7.2&quot;,
+    &quot;eslint-plugin-vue&quot;: &quot;^6.2.2&quot;,
+    &quot;vue-template-compiler&quot;: &quot;^2.6.11&quot;
+  },
+  &quot;eslintConfig&quot;: {
+    &quot;root&quot;: true,
+    &quot;env&quot;: {
+      &quot;node&quot;: true
+    },
+    &quot;extends&quot;: [
+      &quot;plugin:vue/essential&quot;,
+      &quot;eslint:recommended&quot;
+    ],
+    &quot;parserOptions&quot;: {
+      &quot;parser&quot;: &quot;babel-eslint&quot;
+    },
+    &quot;rules&quot;: {}
+  },
+  &quot;browserslist&quot;: [
+    &quot;&gt; 1%&quot;,
+    &quot;last 2 versions&quot;,
+    &quot;not dead&quot;
+  ]
+}
+</code></pre><p><strong>&#x8BF4;&#x660E;</strong></p>
+<ul>
+<li>private: &#x4E3A; false &#x65F6;&#x4EE3;&#x8868;&#x5305;&#x4E0D;&#x662F;&#x79C1;&#x6709;&#x7684;&#xFF0C;&#x6240;&#x6709;&#x4EBA;&#x90FD;&#x80FD;&#x67E5;&#x770B;&#x5E76; npm install</li>
+<li>name: &#x540E;&#x7EED;&#x53D1;&#x5E03;&#x5230; npm &#x7684;&#x5305;&#x540D;&#xFF0C;&#x8BF7;&#x786E;&#x4FDD;&#x4F60;&#x7684;&#x5305;&#x540D;&#x672A;&#x88AB;&#x6CE8;&#x518C;&#xFF0C;&#x5426;&#x5219;&#x5728;&#x53D1;&#x5E03;&#x65F6;&#x4F1A;&#x62A5;&#x9519;</li>
+<li>version: &#x7248;&#x672C;&#x53F7;&#xFF0C;&#x5728;&#x6BCF;&#x6B21;&#x53D1;&#x5E03;&#x66F4;&#x65B0;&#x5230; npm &#x65F6;&#xFF0C;&#x90FD;&#x9700;&#x8981;&#x589E;&#x52A0;&#x7248;&#x672C;&#x53F7;</li>
+<li>description: &#x63CF;&#x8FF0;&#x4FE1;&#x606F;</li>
+<li>main: &#x6307;&#x5B9A;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x662F;&#x6A21;&#x5757;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x9762;&#x7684; index.js</li>
+<li>scripts: &#x6307;&#x5B9A;&#x4E00;&#x4E9B;&#x811A;&#x672C;&#x547D;&#x4EE4;&#x7684; npm &#x547D;&#x4EE4;&#x884C;&#x7F29;&#x5199;&#xFF0C;&#x8FD9;&#x91CC;&#x7684; npm run lib &#x5C31;&#x662F;&#x6253;&#x5305;&#x547D;&#x4EE4;&#x7684;&#x7F29;&#x5199;</li>
+<li>files: &#x6307;&#x5B9A;&#x54EA;&#x4E9B;&#x6587;&#x4EF6;&#x9700;&#x8981;&#x88AB;&#x53D1;&#x5E03;&#x5230; npm &#x4E0A;&#xFF0C;&#x8FD9;&#x91CC;&#x5C31;&#x6307;&#x5B9A;&#x53D1;&#x5E03; dist &#x6587;&#x4EF6;&#x5939;<blockquote>
+<p>&#x53EF;&#x4EE5;&#x5728; npm <a href="https://docs.npmjs.com/cli/v7/configuring-npm/package-json" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#x67E5;&#x770B;&#x66F4;&#x591A;&#x5173;&#x4E8E; package.json &#x7684;&#x77E5;&#x8BC6;</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="&#x6B65;&#x9AA4;-2&#xFF1A;&#x914D;&#x7F6E;&#x9759;&#x6001;&#x8D44;&#x6E90;">&#x6B65;&#x9AA4; 2&#xFF1A;&#x914D;&#x7F6E;&#x9759;&#x6001;&#x8D44;&#x6E90;</h4>
+<p><strong>vue.config.js</strong></p>
+<pre><code>module.exports = {
+  chainWebpack: config =&gt; {
+    config.module
+        .rule(&apos;images&apos;)
+        .use(&apos;url-loader&apos;)
+        .loader(&apos;url-loader&apos;)
+        .tap(options =&gt; Object.assign(options, { limit: 20000 }))
+  },
+  css: { extract: false }
+}
+</code></pre><p>&#x4EE5;&#x4E0A;&#x662F;&#x6307;&#x6253;&#x5305;&#x65F6;&#x5C06;20KB&#x4EE5;&#x4E0B;&#x7684;&#x56FE;&#x7247;&#x8F6C;&#x4E3A;base64&#xFF0C;&#x5C06;css&#x5F3A;&#x5236;&#x5185;&#x8054;&#xFF08;&#x65E0;&#x9700;&#x5728;&#x4F7F;&#x7528;&#x65F6;&#x53E6;&#x5916;&#x5F15;&#x7528;&#x6837;&#x5F0F;&#xFF09;</p>
+<h4 id="&#x6B65;&#x9AA4;-3&#xFF1A;&#x6267;&#x884C;&#x6253;&#x5305;&#x547D;&#x4EE4;">&#x6B65;&#x9AA4; 3&#xFF1A;&#x6267;&#x884C;&#x6253;&#x5305;&#x547D;&#x4EE4;</h4>
+<pre><code>$ npm run lib
+</code></pre><p>&#x6253;&#x5305;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x5728;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A; dist
+ &#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x91CC;&#x9762;&#x6709;&#x4E2A; index.umd.js &#x6587;&#x4EF6;&#x3002;</p>
+<h3 id="&#x53D1;&#x5E03;&#x63D2;&#x4EF6;">&#x53D1;&#x5E03;&#x63D2;&#x4EF6;</h3>
+<p>&#x5B8C;&#x6210;&#x524D;&#x9762;&#x4E24;&#x4E2A;&#x73AF;&#x8282;&#xFF0C;&#x63D2;&#x4EF6;&#x5C31;&#x5B8C;&#x6210;&#x5566;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x53EF;&#x4EE5;&#x628A;&#x5B83;&#x53D1;&#x5E03;&#x5230; npm &#x4E0A;&#x4E86;&#x3002;
+&#x9996;&#x5148;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x6307;&#x4EE4;&#x767B;&#x9646;&#xFF0C;&#x5982;&#x679C;&#x8FD8;&#x6CA1;&#x6709;&#x8D26;&#x53F7;&#x7684;&#x8BDD;&#x5148;&#x53BB;<a href="https://link.segmentfault.com/?url=https%3A%2F%2Fwww.npmjs.com%2Fsignup" target="_blank">&#x6CE8;&#x518C;</a>&#x3002;</p>
+<pre><code>$ npm login 
+// &#x56DE;&#x8F66;&#x540E;&#xFF0C;&#x8F93;&#x5165;&#x4F60;&#x6CE8;&#x518C;npmjs&#x65F6;&#x586B;&#x5199;&#x7684;&#x7528;&#x6237;&#x540D;&#xFF0C;&#x5BC6;&#x7801;&#x548C;&#x90AE;&#x7BB1;
+// &#x767B;&#x5F55;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x4F1A;&#x63D0;&#x793A;&#xFF1A;Logged in as &lt;username&gt; on https://registry.npmjs.org/.
+</code></pre><p>&#x767B;&#x9646;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x5F00;&#x59CB;&#x53D1;&#x5E03;&#xFF1A;</p>
+<pre><code>$ npm publish
+</code></pre><p>&#x540E;&#x7EED;&#x66F4;&#x65B0;&#x63D2;&#x4EF6;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x589E;&#x52A0;package.json&#x91CC;&#x7684;version&#x7248;&#x672C;&#x53F7;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x6B21;&#x6267;&#x884C; npm publish &#x53D1;&#x5E03;&#x66F4;&#x65B0;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF01;</p>
+<h3 id="&#x4F7F;&#x7528;&#x63D2;&#x4EF6;">&#x4F7F;&#x7528;&#x63D2;&#x4EF6;</h3>
+<p><strong>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x5B89;&#x88C5;&#x63D2;&#x4EF6;</strong></p>
+<pre><code>npm install --save v-preview-img
+</code></pre><p><strong>&#x5728;&#x7EC4;&#x4EF6;&#x4E2D;&#x4F7F;&#x7528;</strong></p>
+<pre><code>&lt;template&gt;
+  &lt;div id=&quot;app&quot;&gt;
+    &lt;preview-img
+      :options=&quot;options&quot;
+      :exit=&quot;exitPreview&quot;
+      :data=&quot;previewImages&quot;
+    &gt;&lt;/preview-img&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import previewImg from &apos;v-preview-img&apos;
+
+export default {
+  name: &apos;app&apos;,
+  components: { previewImg },
+  data() {
+    return {
+      options: { initImageIndex: 1 },
+      previewImages: [
+        &apos;http://git.tsingzone.com/uploads/user/avatar/49/22771955.jpeg&apos;,
+        &apos;http://git.tsingzone.com/uploads/user/avatar/49/22771955.jpeg&apos;
+      ]
+    }
+  },
+  methods: {
+    exitPreview() {
+      // ...
+    }
+  }
+}
+&lt;/script&gt;
+</code></pre><p><strong>&#x6548;&#x679C;&#x9884;&#x89C8;</strong></p>
+<p><img src="https://cdn.17kjs.com/public_server_file_/QdKRZX1629942947780" alt="image"></p>
+<p>&#x4EE5;&#x4E0A;&#x5C31;&#x662F;&#x6784;&#x5EFA;&#x63D2;&#x4EF6;&#x7684;&#x6D41;&#x7A0B;&#x5566;&#xFF0C;&#x9644;&#x4E0A;<a href="http://git.tsingzone.com/shifan/extensions/tree/master/preview-img" target="_blank">&#x63D2;&#x4EF6;&#x6E90;&#x4EE3;&#x7801;</a>&#x3002;</p>
+<blockquote>
+<p>v-preview-img &#x63D2;&#x4EF6;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x63D2;&#x4EF6;&#x7684;&#x8303;&#x56F4;&#x6CA1;&#x6709;&#x9650;&#x5236;&#xFF0C;&#x8FD9;&#x91CC;&#x5217;&#x51FA;&#x6765;&#x51E0;&#x79CD;&#x4EE5;&#x4F5C;&#x53C2;&#x8003;&#xFF1A;</p>
+<ul>
+<li>&#x6DFB;&#x52A0;&#x5168;&#x5C40;&#x65B9;&#x6CD5;&#x6216;&#x8005;&#x5C5E;&#x6027; (&#x5982;: vue-custom-element)</li>
+<li>&#x6DFB;&#x52A0;&#x5168;&#x5C40;&#x8D44;&#x6E90;&#xFF1A;&#x6307;&#x4EE4;/&#x8FC7;&#x6EE4;&#x5668;/&#x8FC7;&#x6E21;&#x7B49; (&#x5982;&#xFF1A;vue-touch)</li>
+<li>&#x901A;&#x8FC7;&#x5168;&#x5C40; mixin &#x65B9;&#x6CD5;&#x6DFB;&#x52A0;&#x4E00;&#x4E9B;&#x7EC4;&#x4EF6;&#x9009;&#x9879; (&#x5982;&#xFF1A;vue-router)</li>
+<li>&#x6DFB;&#x52A0; Vue &#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#xFF0C;&#x901A;&#x8FC7;&#x628A;&#x5B83;&#x4EEC;&#x6DFB;&#x52A0;&#x5230; Vue.prototype &#x4E0A;&#x5B9E;&#x73B0; (&#x5982;&#xFF1A;vue-axios)</li>
+<li>&#x4E00;&#x4E2A;&#x5E93;&#xFF0C;&#x63D0;&#x4F9B;&#x81EA;&#x5DF1;&#x7684; API&#xFF0C;&#x540C;&#x65F6;&#x63D0;&#x4F9B;&#x4E0A;&#x9762;&#x63D0;&#x5230;&#x7684;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x529F;&#x80FD;&#xFF08;&#x5982;&#xFF1A;vue-router&#xFF09; </li>
+</ul>
+</blockquote>
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2021-12-16 15:15:45
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="write-unit-test.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 如何编写单元测试">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"如何构建插件","level":"1.5.3","depth":2,"previous":{"title":"如何编写单元测试","level":"1.5.2","depth":2,"path":"advanced/write-unit-test.md","ref":"advanced/write-unit-test.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","back-to-top-button","highlight","livereload","fontsettings","-search","-lunr","search-pro","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"back-to-top-button":{},"highlight":{},"livereload":{},"fontsettings":{"family":"sans","size":2,"theme":"white"},"search-pro":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"shifan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"文档","language":"zh-hans","gitbook":"*"},"file":{"path":"advanced/publish-npm-plugins.md","mtime":"2021-12-16T07:15:45.213Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-12T05:48:08.700Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+
+    </body>
+</html>
+

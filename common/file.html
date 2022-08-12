@@ -1,0 +1,728 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>文件处理 · 文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="shifan">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="filters.html" />
+    
+    
+    <link rel="prev" href="animate.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    开发规范
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../specification/file.html">
+            
+                <a href="../specification/file.html">
+            
+                    
+                    文件目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../specification/html-add-css.html">
+            
+                <a href="../specification/html-add-css.html">
+            
+                    
+                    HTML & CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../specification/javascript.html">
+            
+                <a href="../specification/javascript.html">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../specification/vue.html">
+            
+                <a href="../specification/vue.html">
+            
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../specification/compatibility.html">
+            
+                <a href="../specification/compatibility.html">
+            
+                    
+                    页面兼容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../specification/tool.html">
+            
+                <a href="../specification/tool.html">
+            
+                    
+                    工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../git/">
+            
+                <a href="../git/">
+            
+                    
+                    Git 规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    通用组件/代码
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="previewImg.html">
+            
+                <a href="previewImg.html">
+            
+                    
+                    查看大图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="textEllipsis.html">
+            
+                <a href="textEllipsis.html">
+            
+                    
+                    文本省略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="dateTimeRangePicker.html">
+            
+                <a href="dateTimeRangePicker.html">
+            
+                    
+                    时间选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="lazyLoadSelect.html">
+            
+                <a href="lazyLoadSelect.html">
+            
+                    
+                    懒加载选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="animate.html">
+            
+                <a href="animate.html">
+            
+                    
+                    缓动动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.6" data-path="file.html">
+            
+                <a href="file.html">
+            
+                    
+                    文件处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="filters.html">
+            
+                <a href="filters.html">
+            
+                    
+                    全局过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="performance.html">
+            
+                <a href="performance.html">
+            
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="check.html">
+            
+                <a href="check.html">
+            
+                    
+                    数据检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" >
+            
+                <span>
+            
+                    
+                    持续完善中...
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    进阶
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../advanced/use-chrome-performance.html">
+            
+                <a href="../advanced/use-chrome-performance.html">
+            
+                    
+                    如何分析页面性能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../advanced/write-unit-test.html">
+            
+                <a href="../advanced/write-unit-test.html">
+            
+                    
+                    如何编写单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../advanced/publish-npm-plugins.html">
+            
+                <a href="../advanced/publish-npm-plugins.html">
+            
+                    
+                    如何构建插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >文件处理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6587;&#x4EF6;&#x5904;&#x7406;">&#x6587;&#x4EF6;&#x5904;&#x7406;</h1>
+<h3 id="&#x901A;&#x8FC7;-url-&#x83B7;&#x53D6;&#x6587;&#x4EF6;&#x7684;-blob">&#x901A;&#x8FC7; url &#x83B7;&#x53D6;&#x6587;&#x4EF6;&#x7684; blob</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// utils/file.js</span>
+
+<span class="hljs-comment">/**
+ * &#x901A;&#x8FC7; url &#x83B7;&#x53D6;&#x6587;&#x4EF6;&#x7684; Blob
+ * @param url &#x6587;&#x4EF6;&#x5730;&#x5740;
+ * @returns {Promise&lt;any&gt;}
+ */</span>
+getBlobByUrl(url) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    <span class="hljs-keyword">var</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest()
+    xhr.open(<span class="hljs-string">&quot;GET&quot;</span>, url, <span class="hljs-literal">true</span>)
+    xhr.responseType = <span class="hljs-string">&quot;blob&quot;</span>
+    xhr.onload = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">if</span> (xhr.status === <span class="hljs-number">200</span>) {
+        resolve(xhr.response)
+      } <span class="hljs-keyword">else</span> {
+        reject()
+      }
+    }
+    xhr.send()
+  })
+}
+</code></pre>
+<p><strong>&#x793A;&#x4F8B;</strong></p>
+<pre><code class="lang-js">getBlobByUrl(<span class="hljs-string">&apos;https://cn.vuejs.org/images/logo.svg&apos;</span>).then(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> {
+  ...
+})
+</code></pre>
+<h3 id="&#x901A;&#x8FC7;-base64-&#x83B7;&#x53D6;&#x6587;&#x4EF6;&#x7684;-blob">&#x901A;&#x8FC7; base64 &#x83B7;&#x53D6;&#x6587;&#x4EF6;&#x7684; blob</h3>
+<pre><code class="lang-js"><span class="hljs-comment">// utils/file.js</span>
+
+<span class="hljs-comment">/**
+ * &#x901A;&#x8FC7; base &#x4FE1;&#x606F;&#x83B7;&#x53D6;&#x6587;&#x4EF6;&#x7684;Blob
+ * @param base64
+ * @returns {Blob}
+ */</span>
+getBlobByBase64(base64) {
+  <span class="hljs-keyword">const</span> array = base64.split(<span class="hljs-string">&apos;,&apos;</span>)
+  <span class="hljs-keyword">const</span> type = array[<span class="hljs-number">0</span>].match(<span class="hljs-regexp">/:(.*?);/</span>)[<span class="hljs-number">1</span>]
+  <span class="hljs-keyword">const</span> bytes = <span class="hljs-built_in">window</span>.atob(array[<span class="hljs-number">1</span>])  <span class="hljs-comment">// &#x53BB;&#x6389;url&#x7684;&#x5934;&#xFF0C;&#x5E76;&#x8F6C;&#x6362;&#x4E3A;byte</span>
+  <span class="hljs-keyword">const</span> ab = <span class="hljs-keyword">new</span> <span class="hljs-built_in">ArrayBuffer</span>(bytes.length)
+  <span class="hljs-keyword">const</span> ia = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Uint8Array</span>(ab)
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; bytes.length; i++) {
+    ia[i] = bytes.charCodeAt(i)
+  }
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Blob([ab], { <span class="hljs-attr">type</span>: type })
+},
+</code></pre>
+<p><strong>&#x793A;&#x4F8B;</strong></p>
+<pre><code class="lang-js">getBlobByBase64(<span class="hljs-string">&apos;data:image/png;base64,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&apos;</span>)
+</code></pre>
+<h3 id="&#x901A;&#x8FC7;-blob-&#x8BFB;&#x53D6;&#x6587;&#x4EF6;">&#x901A;&#x8FC7; blob &#x8BFB;&#x53D6;&#x6587;&#x4EF6;</h3>
+<pre><code class="lang-js"><span class="hljs-comment">// utils/file.js</span>
+
+<span class="hljs-comment">/**
+ * &#x901A;&#x8FC7; blob &#x8BFB;&#x53D6;&#x6587;&#x4EF6;
+ * @param blob
+ * @returns {Promise&lt;any&gt;}
+ */</span>
+readFileByBlob(blob) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> reader = <span class="hljs-keyword">new</span> FileReader()
+    reader.onload = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      resolve(reader)
+    }
+    reader.readAsDataURL(blob)
+  })
+},
+</code></pre>
+<p><strong>&#x793A;&#x4F8B;</strong></p>
+<pre><code class="lang-js">readFileByBlob(file).then(<span class="hljs-function"><span class="hljs-params">reader</span> =&gt;</span> {
+  ...
+})
+</code></pre>
+<h3 id="&#x901A;&#x8FC7;-url-&#x52A0;&#x8F7D;&#x56FE;&#x7247;">&#x901A;&#x8FC7; url &#x52A0;&#x8F7D;&#x56FE;&#x7247;</h3>
+<pre><code class="lang-js"><span class="hljs-comment">// utils/file.js</span>
+
+<span class="hljs-comment">/**
+ * &#x901A;&#x8FC7; url &#x52A0;&#x8F7D;&#x56FE;&#x7247;
+ * @param url &#x53EF;&#x4EE5;&#x901A;&#x8FC7;src&#x52A0;&#x8F7D;&#x51FA;&#x6765;&#x7684;&#x56FE;&#x7247;&#x5730;&#x5740;
+ * @param config
+ * @returns {Promise&lt;any&gt;}
+ */</span>
+loadImageByUrl(url, config = {}) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> { crossOrigin } = config
+    <span class="hljs-keyword">const</span> image = <span class="hljs-keyword">new</span> Image()
+    crossOrigin &amp;&amp; (image.crossOrigin = crossOrigin)
+    image.onload = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      resolve(image)
+    }
+    image.src = url
+  })
+},
+</code></pre>
+<p><strong>&#x793A;&#x4F8B;</strong></p>
+<pre><code class="lang-js">loadImageByUrl(formulaImg).then(<span class="hljs-function"><span class="hljs-params">image</span> =&gt;</span> {
+  ...
+})
+</code></pre>
+<h3 id="&#x83B7;&#x53D6;&#x56FE;&#x7247;&#x7684;-base64">&#x83B7;&#x53D6;&#x56FE;&#x7247;&#x7684; base64</h3>
+<pre><code class="lang-js"><span class="hljs-comment">// utils/file.js</span>
+
+<span class="hljs-comment">/**
+ * &#x83B7;&#x53D6;&#x56FE;&#x7247;&#x7684; base64
+ * @param image
+ * @param config
+ * @returns {string}
+ */</span>
+getImageBase64(image, config = {}) {
+  <span class="hljs-keyword">const</span> { type = <span class="hljs-string">&apos;image/png&apos;</span>, width, height } = config
+  <span class="hljs-keyword">const</span> canvas = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;canvas&quot;</span>)
+  canvas.width = width
+  canvas.height = height
+  canvas.getContext(<span class="hljs-string">&quot;2d&quot;</span>).drawImage(image, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, width, height)  <span class="hljs-comment">// &#x5C06;&#x56FE;&#x7247;&#x7ED8;&#x5236;&#x5230;canvas&#x4E2D;</span>
+  <span class="hljs-keyword">return</span> canvas.toDataURL(type, <span class="hljs-number">1</span>)  <span class="hljs-comment">// &#x8F6C;&#x6362;&#x56FE;&#x7247;&#x4E3A;dataURL</span>
+},
+</code></pre>
+<p><strong>&#x793A;&#x4F8B;</strong></p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> src = getImageBase64(image, {
+  <span class="hljs-attr">width</span>: image.width * <span class="hljs-number">0.5</span>,
+  <span class="hljs-attr">height</span>: image.height * <span class="hljs-number">0.5</span>,
+})
+</code></pre>
+<h3 id="&#x901A;&#x8FC7;-blob-&#x83B7;&#x53D6;&#x56FE;&#x7247;">&#x901A;&#x8FC7; blob &#x83B7;&#x53D6;&#x56FE;&#x7247;</h3>
+<pre><code class="lang-js"><span class="hljs-comment">// utils/file.js</span>
+
+<span class="hljs-comment">/**
+ * &#x901A;&#x8FC7; blob &#x83B7;&#x53D6;&#x56FE;&#x7247;
+ * @param blob
+ * @returns {Promise&lt;any&gt;}
+ */</span>
+getImageByBlob(blob) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    <span class="hljs-keyword">this</span>.readFileByBlob(blob).then(<span class="hljs-function"><span class="hljs-params">reader</span> =&gt;</span> {
+      <span class="hljs-keyword">this</span>.loadImageByUrl(reader.result).then(<span class="hljs-function"><span class="hljs-params">image</span> =&gt;</span> {
+        resolve(image)
+      })
+    })
+  })
+},
+</code></pre>
+<p><strong>&#x793A;&#x4F8B;</strong></p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { width, height } = <span class="hljs-keyword">await</span> getImageByBlob(file)
+</code></pre>
+<h3 id="&#x5C06;&#x6570;&#x636E;&#x6D41;&#x8F6C;&#x6210;&#x6587;&#x4EF6;">&#x5C06;&#x6570;&#x636E;&#x6D41;&#x8F6C;&#x6210;&#x6587;&#x4EF6;</h3>
+<pre><code class="lang-js"><span class="hljs-comment">// utils/file.js</span>
+
+<span class="hljs-comment">/**
+ * &#x4E0B;&#x8F7D;&#x540E;&#x7AEF;&#x8FD4;&#x56DE;&#x7684;&#x6570;&#x636E;&#x6D41;
+ * @param stream &#x6587;&#x4EF6;&#x6D41;
+ * @param fileName &#x9ED8;&#x8BA4;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x79F0;
+ */</span>
+downloadStream(stream, fileName) {
+  <span class="hljs-keyword">if</span> (!stream) { <span class="hljs-keyword">return</span> }
+  <span class="hljs-keyword">const</span> blob = <span class="hljs-keyword">new</span> Blob([stream], { <span class="hljs-attr">type</span>: <span class="hljs-string">&apos;application/octet-stream&apos;</span> }) <span class="hljs-comment">// &#x5C06;&#x6587;&#x4EF6;&#x6D41;&#x653E;&#x5230;blob&#x5BF9;&#x8C61;&#x91CC;&#x9762;</span>
+  <span class="hljs-keyword">const</span> url = <span class="hljs-built_in">window</span>.URL.createObjectURL(blob) <span class="hljs-comment">// &#x521B;&#x5EFA;url &#x5730;&#x5740;&#x4E3A;blob&#x5BF9;&#x8C61;</span>
+  <span class="hljs-keyword">const</span> a = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;a&quot;</span>)
+  <span class="hljs-built_in">document</span>.body.appendChild(a)
+  a.style.display = <span class="hljs-string">&apos;none&apos;</span>
+  a.href = url
+  <span class="hljs-keyword">if</span> (fileName) {
+    a.download = fileName <span class="hljs-comment">//&#x6587;&#x4EF6;&#x540D;</span>
+  }
+  a.click()
+  <span class="hljs-built_in">document</span>.body.removeChild(a)
+  <span class="hljs-built_in">window</span>.URL.revokeObjectURL(url)
+},
+</code></pre>
+<p><strong>&#x793A;&#x4F8B;</strong></p>
+<pre><code class="lang-js">getBlobByUrl(<span class="hljs-string">&apos;https://cn.vuejs.org/images/logo.svg&apos;</span>).then(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> {
+  downloadStream(data, <span class="hljs-string">&apos;logo-vue.svg&apos;</span>)
+})
+</code></pre>
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2022-05-13 10:25:42
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="animate.html" class="navigation navigation-prev " aria-label="Previous page: 缓动动画">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="filters.html" class="navigation navigation-next " aria-label="Next page: 全局过滤器">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"文件处理","level":"1.4.6","depth":2,"next":{"title":"全局过滤器","level":"1.4.7","depth":2,"path":"common/filters.md","ref":"common/filters.md","articles":[]},"previous":{"title":"缓动动画","level":"1.4.5","depth":2,"path":"common/animate.md","ref":"common/animate.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","back-to-top-button","highlight","livereload","fontsettings","-search","-lunr","search-pro","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"back-to-top-button":{},"highlight":{},"livereload":{},"fontsettings":{"family":"sans","size":2,"theme":"white"},"search-pro":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"shifan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"文档","language":"zh-hans","gitbook":"*"},"file":{"path":"common/file.md","mtime":"2022-05-13T02:25:42.830Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-12T05:48:08.700Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+
+    </body>
+</html>
+

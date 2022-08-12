@@ -1,0 +1,809 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>懒加载选择器 · 文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="shifan">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="animate.html" />
+    
+    
+    <link rel="prev" href="dateTimeRangePicker.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    开发规范
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../specification/file.html">
+            
+                <a href="../specification/file.html">
+            
+                    
+                    文件目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../specification/html-add-css.html">
+            
+                <a href="../specification/html-add-css.html">
+            
+                    
+                    HTML & CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../specification/javascript.html">
+            
+                <a href="../specification/javascript.html">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../specification/vue.html">
+            
+                <a href="../specification/vue.html">
+            
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../specification/compatibility.html">
+            
+                <a href="../specification/compatibility.html">
+            
+                    
+                    页面兼容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../specification/tool.html">
+            
+                <a href="../specification/tool.html">
+            
+                    
+                    工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../git/">
+            
+                <a href="../git/">
+            
+                    
+                    Git 规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    通用组件/代码
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="previewImg.html">
+            
+                <a href="previewImg.html">
+            
+                    
+                    查看大图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="textEllipsis.html">
+            
+                <a href="textEllipsis.html">
+            
+                    
+                    文本省略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="dateTimeRangePicker.html">
+            
+                <a href="dateTimeRangePicker.html">
+            
+                    
+                    时间选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.4" data-path="lazyLoadSelect.html">
+            
+                <a href="lazyLoadSelect.html">
+            
+                    
+                    懒加载选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="animate.html">
+            
+                <a href="animate.html">
+            
+                    
+                    缓动动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="file.html">
+            
+                <a href="file.html">
+            
+                    
+                    文件处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="filters.html">
+            
+                <a href="filters.html">
+            
+                    
+                    全局过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="performance.html">
+            
+                <a href="performance.html">
+            
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="check.html">
+            
+                <a href="check.html">
+            
+                    
+                    数据检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" >
+            
+                <span>
+            
+                    
+                    持续完善中...
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    进阶
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../advanced/use-chrome-performance.html">
+            
+                <a href="../advanced/use-chrome-performance.html">
+            
+                    
+                    如何分析页面性能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../advanced/write-unit-test.html">
+            
+                <a href="../advanced/write-unit-test.html">
+            
+                    
+                    如何编写单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../advanced/publish-npm-plugins.html">
+            
+                <a href="../advanced/publish-npm-plugins.html">
+            
+                    
+                    如何构建插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >懒加载选择器</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="lazy-load-select">lazy-load-select</h1>
+<blockquote>
+<p>&#x7EC4;&#x4EF6;&#x529F;&#x80FD;&#xFF1A;&#x57FA;&#x4E8E; element-ui &#x7684; el-select &#x589E;&#x52A0;&#x61D2;&#x52A0;&#x8F7D;&#x673A;&#x5236;&#xFF0C;&#x907F;&#x514D;&#x9009;&#x9879;&#x6570;&#x636E;&#x592A;&#x591A;&#x65F6;&#x6E32;&#x67D3;&#x5361;&#x987F;&#x3002;</p>
+</blockquote>
+<h3 id="&#x7EC4;&#x4EF6;&#x4EE3;&#x7801;">&#x7EC4;&#x4EF6;&#x4EE3;&#x7801;</h3>
+<pre><code class="lang-vue">&lt;!--components/common/DateTimeRangePicker.vue--&gt;
+&lt;template&gt;
+  &lt;el-select
+    v-model=&quot;selectedIds&quot;
+    class=&quot;loadmore-select&quot;
+    :disabled=&quot;disabled&quot;
+    :clearable=&quot;clearable&quot;
+    :filterable=&quot;filterable&quot;
+    :multiple=&quot;multiple&quot;
+    :filter-method=&quot;filterMethod&quot;
+    :placeholder=&quot;placeholder&quot;
+    :remote=&quot;remote&quot;
+    :remote-method=&quot;remoteMethod&quot;
+    :reserve-keyword=&quot;reserveKeyword&quot;
+    @focus=&quot;handleFocus&quot;
+    @blur=&quot;handleBlur&quot;
+    @change=&quot;handleValueChange&quot;
+    @visible-change=&quot;val =&gt; filterText = &apos;&apos; &quot;
+    v-el-select-loadmore=&quot;() =&gt; extraCount += config.step&quot;
+  &gt;
+    &lt;el-option
+      v-for=&quot;item in filterOptions&quot;
+      :key=&quot;item[config.value]&quot;
+      :label=&quot;item[config.label]&quot;
+      :value=&quot;item[config.value]&quot;
+    &gt;&lt;/el-option&gt;
+  &lt;/el-select&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import performanceUtils from &apos;../../utils/performance&apos;
+  export default {
+    name: &quot;lazy-load-select&quot;,
+    model: {
+      prop: &apos;value&apos;,
+      event: &apos;change&apos;
+    },
+    props: {
+      clearable: {
+        type: Boolean,
+        default: false
+      },
+      disabled: {
+        type: Boolean,
+        default: false
+      },
+      filterable: {
+        type: Boolean,
+        default: false
+      },
+      multiple: {
+        type: Boolean,
+        default: false
+      },
+      remote: {
+        type: Boolean,
+        default: false
+      },
+      remoteMethod: {
+        type: Function
+      },
+      reserveKeyword: {
+        type: Boolean,
+        default: false
+      },
+      placeholder: {
+        type: String,
+        default: &apos;&apos;
+      },
+      options: {
+        type: Array,
+        default() {
+          return []
+        }
+      },
+      value: {
+        required: true,
+        default: &apos;&apos;
+      },
+      props: {
+        type: Object,
+        default() {
+          return {}
+        }
+      },
+    },
+    data() {
+      return {
+        filterText: &apos;&apos;,
+        extraCount: 10,  // &#x9664;&#x5DF2;&#x9009;&#x4E2D;&#x5916;&#xFF0C;&#x989D;&#x5916;&#x663E;&#x793A;&#x6761;&#x6570;
+        selectedIds: &apos;&apos;,
+        config: {}
+      }
+    },
+
+    methods: {
+      handleFocus(e) {
+        this.$emit(&apos;focus&apos;, e)
+      },
+
+      handleBlur(e) {
+        this.$emit(&apos;blur&apos;, e)
+      },
+
+      handleValueChange(value) {
+        this.$emit(&apos;change&apos;, value)
+        this.$emit(&apos;update:value&apos;, value)  // &#x4EC5;&#x4F7F;&#x7528;v-model
+      },
+
+      filterMethod:  performanceUtils.debounce(function(text) {
+        this.filterText = text
+      }, 300),
+
+      // &#x521D;&#x59CB;&#x5316;
+      init() {
+        const defaultProps = {
+          step: 5,
+          initCount: 10,
+          label: &apos;name&apos;,  // &#x6307;&#x5B9A;&#x9009;&#x9879;&#x540D;&#x79F0;&#x4E3A;&#x9009;&#x9879;&#x5BF9;&#x8C61;&#x7684;&#x67D0;&#x4E2A;&#x5C5E;&#x6027;&#x503C;
+          value: &apos;id&apos;,  // &#x6307;&#x5B9A;&#x9009;&#x9879;&#x7684;&#x503C;&#x4E3A;&#x9009;&#x9879;&#x5BF9;&#x8C61;&#x7684;&#x67D0;&#x4E2A;&#x5C5E;&#x6027;&#x503C;
+        }
+        this.config = Object.assign({}, defaultProps, this.props, this.config)
+        this.selectedIds = Array.isArray(this.value) ? JSON.parse(JSON.stringify(this.value)) : this.value
+      }
+    },
+
+    directives: {
+      &quot;el-select-loadmore&quot;: (el, binding) =&gt; {
+        const SELECTWRAP_DOM = el.querySelector(&quot;.loadmore-select .el-select-dropdown .el-select-dropdown__wrap&quot;)
+        if (SELECTWRAP_DOM) {
+          SELECTWRAP_DOM.addEventListener(&quot;scroll&quot;, function() {
+            const condition = this.scrollHeight - this.scrollTop - 2 &lt;= this.clientHeight
+            if (condition) binding.value()
+          })
+        }
+      },
+    },
+
+    computed: {
+      // &#x8FC7;&#x6EE4;&#x4E0B;&#x62C9;&#x9009;&#x62E9;&#x9879;
+      filterOptions() {
+        const { label, value } = this.config
+        const filterText = this.filterText.toLowerCase()
+        const allOptions = this.options
+        const selectedIds = this.multiple ? this.selectedIds : [this.selectedIds]
+        const filterOptions = filterText ? allOptions.filter(it =&gt; it[label].toLowerCase().includes(filterText)) : allOptions
+        const selectedOptions = filterOptions.filter((item) =&gt; selectedIds.includes(item[value]))
+        const loadOptions = filterOptions.slice(0, this.extraCount)
+        const loadOptionIds = loadOptions.map(it =&gt; it[value])
+        const extraOptions = selectedOptions.filter(it =&gt; !loadOptionIds.includes(it[value]))
+        return extraOptions.concat(loadOptions)
+      },
+    },
+
+    watch: {
+      value() {
+        this.init()
+      }
+    },
+
+    mounted() {
+      this.init()
+    }
+  }
+&lt;/script&gt;
+
+&lt;style lang=&quot;scss&quot; scoped&gt;
+
+&lt;/style&gt;
+</code></pre>
+<h3 id="&#x4F7F;&#x7528;&#x793A;&#x4F8B;">&#x4F7F;&#x7528;&#x793A;&#x4F8B;</h3>
+<pre><code class="lang-vue">&lt;!--Other.vue--&gt;
+&lt;template&gt;
+    &lt;lazy-load-select
+       v-model=&quot;searchUserId&quot;
+       placeholder=&quot;&#x64CD;&#x4F5C;&#x8005;&quot;
+       clearable
+       filterable
+       :options=&quot;userOptions&quot;
+       :props=&quot;{
+         label: &apos;userName&apos;,
+         value: &apos;userId&apos;
+        }&quot;
+    /&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+  import LazyLoadSelect from &apos;../../common/LazyLoadSelect&apos;
+
+  export default {
+    name: &apos;other&apos;,
+    components: { LazyLoadSelect },
+    data() {
+      return {
+        userOptions: [
+          { userId: 1, userName: &apos;&#x7528;&#x6237;1&apos; },
+          { userId: 2, userName: &apos;&#x7528;&#x6237;2&apos; }
+        ]
+      }
+    }
+  }
+&lt;/script&gt;
+</code></pre>
+<h3 id="&#x4F7F;&#x7528;&#x8BF4;&#x660E;">&#x4F7F;&#x7528;&#x8BF4;&#x660E;</h3>
+<h4 id="props">props</h4>
+<p><code>value/v-model</code> &#x7EC4;&#x4EF6;&#x7ED1;&#x5B9A;&#x503C;</p>
+<p><code>options</code> &#x9009;&#x62E9;&#x5668;&#x7684;&#x6240;&#x6709;&#x9009;&#x9879;</p>
+<p><code>props</code> &#x5C5E;&#x6027;&#x914D;&#x7F6E;&#xFF0C;&#x8BF4;&#x660E;&#x5982;&#x4E0B;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">label</td>
+<td>&#x6307;&#x5B9A;&#x9009;&#x9879;&#x540D;&#x79F0;&#x4E3A;&#x9009;&#x9879;&#x5BF9;&#x8C61;&#x7684;&#x67D0;&#x4E2A;&#x5C5E;&#x6027;&#x503C;</td>
+<td>string</td>
+<td>&apos;name&apos;</td>
+</tr>
+<tr>
+<td style="text-align:left">value</td>
+<td>&#x6307;&#x5B9A;&#x9009;&#x9879;&#x7684;&#x503C;&#x4E3A;&#x9009;&#x9879;&#x5BF9;&#x8C61;&#x7684;&#x67D0;&#x4E2A;&#x5C5E;&#x6027;&#x503C;</td>
+<td>string</td>
+<td>&apos;id&apos;</td>
+</tr>
+<tr>
+<td style="text-align:left">initCount</td>
+<td>&#x663E;&#x793A;&#x9009;&#x9879;&#x7684;&#x521D;&#x59CB;&#x4E2A;&#x6570;</td>
+<td>number</td>
+<td>10</td>
+</tr>
+<tr>
+<td style="text-align:left">step</td>
+<td>&#x6BCF;&#x6B21;&#x6ED1;&#x5230;&#x5E95;&#x90E8;&#x65F6;&#xFF0C;&#x9009;&#x9879;&#x7684;&#x65B0;&#x589E;&#x4E2A;&#x6570;</td>
+<td>number</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p>&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#x4E0E; el-select &#x7EC4;&#x4EF6;&#x7528;&#x6CD5;&#x4E00;&#x81F4;&#xFF1A;</p>
+<p><code>placeholder</code> &#x3001;<code>clearable</code> &#x3001;<code>disabled</code> &#x3001;<code>filterable</code>&#x3001;<code>multiple</code>&#x3001;<code>remote</code>&#x3001;<code>remoteMethod</code> &#x3001;<code>reserveKeyword</code> </p>
+<h4 id="events">Events</h4>
+<p><code>change</code> &#x7ED1;&#x5B9A;&#x503C;&#x4FEE;&#x6539;&#x540E;&#x89E6;&#x53D1;</p>
+<p><code>focus</code> &#x8F93;&#x5165;&#x6846;&#x83B7;&#x5F97;&#x7126;&#x70B9;&#x65F6;&#x89E6;&#x53D1;</p>
+<p><code>blur</code> &#x8F93;&#x5165;&#x6846;&#x5931;&#x53BB;&#x7126;&#x70B9;&#x65F6;&#x89E6;&#x53D1;</p>
+<h3 id="&#x6548;&#x679C;&#x793A;&#x4F8B;">&#x6548;&#x679C;&#x793A;&#x4F8B;</h3>
+<p><img src="http://cdn-test.17kjs.com/questions/1/4e27322d8faad3a129bf1d76241273a3.gif" alt=""></p>
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2022-08-11 14:28:51
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="dateTimeRangePicker.html" class="navigation navigation-prev " aria-label="Previous page: 时间选择器">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="animate.html" class="navigation navigation-next " aria-label="Next page: 缓动动画">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"懒加载选择器","level":"1.4.4","depth":2,"next":{"title":"缓动动画","level":"1.4.5","depth":2,"path":"common/animate.md","ref":"common/animate.md","articles":[]},"previous":{"title":"时间选择器","level":"1.4.3","depth":2,"path":"common/dateTimeRangePicker.md","ref":"common/dateTimeRangePicker.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","back-to-top-button","highlight","livereload","fontsettings","-search","-lunr","search-pro","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"back-to-top-button":{},"highlight":{},"livereload":{},"fontsettings":{"family":"sans","size":2,"theme":"white"},"search-pro":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"shifan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"文档","language":"zh-hans","gitbook":"*"},"file":{"path":"common/lazyLoadSelect.md","mtime":"2022-08-11T06:28:51.249Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-12T05:48:08.700Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+
+    </body>
+</html>
+
